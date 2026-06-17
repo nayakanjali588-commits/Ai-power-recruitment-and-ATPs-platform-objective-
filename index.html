@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Recruitment & ATS Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>AI Recruitment & ATS Platform</h1>
+
+    <form id="candidateForm">
+        <input type="text" id="name" placeholder="Candidate Name">
+
+        <input type="email" id="email" placeholder="Email">
+
+        <input type="text" id="skills"
+               placeholder="Skills (e.g. Java, Python, HTML)">
+
+        <button type="button" onclick="screenCandidate()">
+            Analyze Candidate
+        </button>
+    </form>
+
+    <div class="result" id="result">
+        <h2>Screening Result</h2>
+
+        <p><strong>Name:</strong>
+            <span id="candidateName"></span></p>
+
+        <p><strong>Email:</strong>
+            <span id="candidateEmail"></span></p>
+
+        <p><strong>Match Score:</strong>
+            <span id="score"></span></p>
+
+        <p><strong>Status:</strong>
+            <span id="status"></span></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
